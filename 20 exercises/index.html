@@ -22,33 +22,218 @@
         <h1><strong>Exercise 2</strong></h1>
         <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-        <button type="button" onclick="document.getElementById('myImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHF7ZyIQ45EezDYd3b1fPjnn_omYSvKGPEuA&s'">12 o'clock
-            light</button>
+        <button type="button"
+            onclick="document.getElementById('myImage').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHF7ZyIQ45EezDYd3b1fPjnn_omYSvKGPEuA&s'">12
+            o'clock</button>
 
         <img id="myImage" src="https://etc.usf.edu/clipart/33600/33654/nclock-01-00_33654_lg.gif" style="width:100px">
 
-        <button type="button" onclick="document.getElementById('myImage').src='https://etc.usf.edu/clipart/33600/33654/nclock-01-00_33654_lg.gif'">1 o'clock
-            light</button>
+        <button type="button"
+            onclick="document.getElementById('myImage').src='https://etc.usf.edu/clipart/33600/33654/nclock-01-00_33654_lg.gif'">1
+            o'clock</button>
     </section>
     <section id="3">
         <h1><strong>Exercise 3</strong></h1>
         <button type="button" onclick="document.getElementById('demo1').style.fontWeight='bold'">Click Me!</button>
     </section>
     <section id="4">
-        
+        <h1><strong>Exercise 4</strong></h1>
+        <p>Answer</p>
+        <p id="date">Date</p>
+        <button type="button" onclick="document.getElementById('date').style.display= 'none';">Disappear</button>
+        <button type="button"
+            onclick="document.getElementById('date').style.display= 'block';document.getElementById('date').innerHTML = new Date();">Appear</button>
     </section>
-    <section id="5"></section>
-    <section id="6"></section>
-    <section id="7"></section>
-    <section id="8"></section>
-    <section id="9"></section>
-    <section id="10"></section>
-    <section id="11"></section>
-    <section id="12"></section>
-    <section id="13"></section>
-    <section id="14"></section>
-    <section id="15"></section>
-    <section id="16"></section>
+    <section id="5">
+        <h1><strong>Exercise 5</strong></h1>
+        <p>Press F12 or right click on the web-site, then go to the "Console" tab. The result is there.</p>
+        <script src="index.js">
+            console.log("Hello, my name is Berdiyar!");
+            console.log("I'm learning about JavaScript.")
+        </script>
+    </section>
+    <section id="6">
+        <h1><strong>Exercise 6</strong></h1>
+        <p>Press F12 or right click on the web-site, then go to the "Console" tab. The results are there.</p>
+        <script>
+            let num = 6;
+            console.log("This is " + num + "-th exercise");
+            let str = "Will i get another 100 for this assignment?";
+            console.log(str);
+            let bool = true;
+            console.log(bool);
+        </script>
+    </section>
+    <section id="7">
+        <h1><strong>Exercise 7</strong></h1>
+        <p>Answer</p>
+        <p id="result">Result of the arithmetic program</p>
+        <script>
+            //var MyGrade = prompt("My grade if i do all these exercises");
+            var MyTotalGrade = 70 + MyGrade * 1;
+            document.write(MyTotalGrade);
+        </script>
+    </section>
+    <section id="8">
+        <h1><strong>Exercise 8</strong></h1>
+        <p>Current date:</p>
+        <script>
+            document.write(new Date());
+        </script>
+    </section>
+    <section id="9">
+        <h1><strong>Exercise 9</strong></h1>
+        <p>Is the given year a leap year?</p>
+        <p id="ans"></p>
+        <input type="text" id="year"><br><br>
+        <button type="button" onclick="func()">Enter</button>
+        <script>
+            function func() {
+                var year = document.getElementById("year").value;
+                if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                    document.getElementById("ans").innerHTML = "Yes";
+                }
+                else {
+                    document.getElementById("ans").innerHTML = "No";
+                }
+            }
+        </script>
+    </section>
+    <section id="10">
+        <h1><strong>Exercise 10</strong></h1>
+        <p>First number:</p>
+        <input type="text" id="firstnum"><br>
+        <p>Second number:</p>
+        <input type="text" id="secondnum">
+        <p>Answer:</p>
+        <p id="res"></p>
+        <button type="button" onclick="Multiply()">Multiply</button>
+        <button type="button" onclick="Divide()">Divide</button>
+        <script>
+            function Multiply() {
+                var num1 = document.getElementById("firstnum").value;
+                var num2 = document.getElementById("secondnum").value;
+                document.getElementById('res').innerHTML = num1 * num2;
+            }
+            function Divide() {
+                var num1 = document.getElementById("firstnum").value;
+                var num2 = document.getElementById("secondnum").value;
+                document.getElementById('res').innerHTML = num1 / num2;
+            }
+        </script>
+    </section>
+    <section id="11">
+        <h1><strong>Exercise 11</strong></h1>
+        <p>Convert this temperature:</p><input type="text" id="temp"><br><br>
+        <button type="button" onclick="func()">Enter</button>
+        <p>Answer:</p>
+        <p id="res2"></p>
+        <script>
+            function func() {
+                var temp = document.getElementById("temp").value;
+                if (temp.slice(-2, temp.length) == "°C") {
+                    document.getElementById("res2").innerHTML = (temp.slice(0, -2) * 9) / 5 + 32 + "°F";
+                }
+                else if (temp.slice(-2, temp.length) == "°F") {
+                    document.getElementById("res2").innerHTML = ((temp.slice(0, -2) - 32) / 9) * 5 + "°C";
+                }
+                else {
+                    document.getElementById("res2").innerHTML = "Incorrect input";
+                }
+            }
+        </script>
+    </section>
+    <section id="12">
+        <h1><strong>Exercise 12</strong></h1>
+        <p>Enter the number:</p>
+        <input type="text" id="numb"><br><br>
+        <button type="button" onclick="even_or_odd()">Check the number</button>
+        <p>Answer:</p>
+        <p id="res3"></p>
+        <script>
+            function even_or_odd() {
+                var num = document.getElementById("numb").value;
+                if (num % 2 == 0) {
+                    document.getElementById("res3").innerHTML = "The number is even";
+                }
+                else {
+                    document.getElementById("res3").innerHTML = "The number is odd";
+                }
+            }
+        </script>
+    </section>
+    <section id="13">
+        <h1><strong>Exercise 13</strong></h1>
+        <input type="text" id="numbers"><br><br>
+        <button type="button" onclick="func()">Enter the numbers</button>
+        <p>Answer:</p>
+        <p id="res4"></p>
+        <script>
+            function func() {
+                var str = document.getElementById("numbers").value;
+                var num_arr = str.split(" ");
+                num_arr.sort();
+                num_arr.reverse();
+                document.getElementById("res4").innerHTML = "Largest number: " + num_arr[0] + " Lowest number: " + num_arr[2];
+            }
+        </script>
+    </section>
+    <section id="14">
+        <h1><strong>Exercise 14</strong></h1>
+        <p>Answer:</p>
+        <p id="res5"></p>
+        <input type="text" id="formula"><br><br>
+        <button type="button" onclick="document.getElementById('res5').innerHTML = Heron(5,6,7)">Enter the
+            numbers</button>
+        <script>
+            function Heron(x, y, z) {
+                return eval(document.getElementById("formula").value.replaceAll("p", (x + y + z) / 2).replace("x", x).replace("y", y).replace("z", z));
+            }
+        </script>
+    </section>
+    <section id="15">
+        <h1><strong>Exercise 15</strong></h1>
+        <input type="text" id="input"><br><br>
+        <button type="button" onclick="document.getElementById('res6').innerHTML = ans()">Enter the numbers</button>
+        <p>Answer:</p>
+        <p id="res6"></p>
+        <script>
+            function ans() {
+                var n = document.getElementById("input").value;
+                var ans = factorial(n);
+                function factorial(n) {
+                    if (n == 1 || n == 0) {
+                        return 1;
+                    }
+                    return n * factorial(n - 1);
+                }
+                return ans;
+            }
+        </script>
+    </section>
+    <section id="16">
+        <h1><strong>Exercise 16</strong></h1>
+        <input type="text" id="str"><br><br>
+        <button type="button" onclick="document.getElementById('res7').innerHTML = vow_cons()">Enter</button>
+        <p id="res7"></p>
+        <script>
+            var vowels_arr = ["a", "o", "e", "i", "u"];
+            var consonants_arr = ["b"," c"," d"," f"," g"," h"," j"," k"," l"," m"," n"," p"," q"," r"," s"," t"," v"," w"," x","y","z"]
+            function vow_cons(){
+                var string = document.getElementById("str").value;
+                var cons = 0, vows = 0;
+                for(var i in string){
+                    if(vowels_arr.includes(string[i])){
+                        vows++;
+                    }
+                    else if(consonants_arr.includes(string[i])){
+                        cons++;
+                    }
+                }
+                return `The number of vowels is ${vows} and number of consonants is ${conss}`;
+            }
+        </script>
+    </section>
     <section id="17"></section>
     <section id="18"></section>
     <section id="19"></section>
