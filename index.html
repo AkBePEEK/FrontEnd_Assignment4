@@ -1,20 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 4</title>
-    <link rel="stylesheet" href="style.css">
-    lin
+    <title>Valorant Mechanics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <section id="1">
-        <button type="button" onclick="document.getElementById('1').style.backgroundColor = 'black';">Change the background color</button>
-        <button type="button" onclick="document.getElementById('1').style.">Change the font style</button>
+    <section id="header">
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active bg-danger" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#1" class="nav-link text-danger">Basics</a></li>
+                    <li class="nav-item"><a href="#2" class="nav-link text-danger">Modes</a></li>
+                    <li class="nav-item"><a href="#3" class="nav-link text-danger">Maps</a></li>
+                    <li class="nav-item"><a href="#4" class="nav-link text-danger">Weapons</a></li>
+                </ul>
+            </header>
+        </div>
     </section>
-    <section id="to-do_list"></section>
-    <section id="number_sort"></section>
-    <section id="simple_calculator"></section>
-    <section id="tax_calculator"></section>
+    <section id="intro">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">Valorant</h1><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" width="45px" height="45px"
+                viewBox="0 0 32 32" id="Camada_1" version="1.1" xml:space="preserve">
+
+                <g>
+
+                    <path
+                        d="M19.8,26.1h-0.2c-2.4,0-4.8,0-7.2,0c-0.3,0-0.5-0.1-0.6-0.3c-2.5-3.2-5.1-6.3-7.6-9.5C4.1,16.1,4,16,4,15.8   c0-3.1,0-6.1,0-9.2c0-0.1,0-0.2,0.1-0.2h0.1c5.2,6.5,10.4,13,15.5,19.5c0,0,0,0.1,0.1,0.1L19.8,26.1L19.8,26.1z" />
+
+                    <path
+                        d="M27.8,16.3c-0.7,0.9-1.5,1.8-2.2,2.8c-0.2,0.2-0.4,0.3-0.6,0.3c-2.4,0-4.8,0-7.1,0c0,0-0.1,0-0.1,0c-0.1,0-0.2-0.1-0.1-0.2   c0,0,0-0.1,0.1-0.1c2.4-3,4.7-5.9,7.1-8.9c1-1.2,2-2.5,2.9-3.7c0-0.1,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1,0c0,0.1,0,0.1,0,0.2   c0,3,0,6.1,0,9.1C28,16,27.9,16.2,27.8,16.3L27.8,16.3z" />
+
+                </g>
+
+            </svg>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">A free-to-play first-person tactical hero shooter developed and published by Riot
+                    Games. Valorant takes inspiration from the Counter-Strike series, borrowing several mechanics such
+                    as the buy menu, spray patterns, and inaccuracy while moving.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a href="https://playvalorant.com/ru-ru/"><button type="button"
+                            class="btn btn-danger btn-lg px-4 me-sm-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-play" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                            </svg>Play</button></a>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 50vh;">
+                <div class="container px-5">
+                    <img src="https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg"
+                        class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="900" height="900"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="1">
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Basic 4 mechanics</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aim</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Movement</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Agents</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Game sense</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="2" class="bg-danger">
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Modes</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/9/9b/Plant_Defuse_Mode.png/revision/latest?cb=20200805002134"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Unrated</h3>
+                        <p>Unrated (also known as Standard or Normals) is the base game mode in VALORANT. It is a
+                            Plant/Defuse mode for two teams of five players where each team plays as either Attacker or
+                            Defender.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/1/1a/Radiant_Rank.png/revision/latest?cb=20200623203621"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Competitive</h3>
+                        <p>Competitive (also known as Ranked) is a game mode in VALORANT. It uses the same in-game rules
+                            and format as Unrated, but with a focus on higher-stakes competition.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/9/9d/Premier.png/revision/latest?cb=20230426124734"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Premier</h3>
+                        <p>Premier is a tournament game mode in VALORANT available only on PC. Matches use the same
+                            in-game rules as Competitive, but with a focus on top-tier competition and playing together
+                            as one squad throughout a tournament structure, including additional features taken from pro
+                            play such as map pick/ban phases and timeouts. At its highest level, it will serve as a
+                            direct connection from the playerbase to the professional scene.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/3/3c/Deathmatch.png/revision/latest?cb=20200805002133"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Deathmatch</h3>
+                        <p>Deathmatch is a multiplayer free-for-all game mode designed to allow players to hone their
+                            gunplay mechanics or warm up before playing Competitive. Each player loads into a random map
+                            with a random agent that they own. Players start in a brief warm-up phase before the real
+                            game starts. Players cannot buy or use abilities but are automatically given Heavy Shields.
+                            They can buy whatever weapons they want.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/9/98/Swiftplay.png/revision/latest?cb=20221206165230"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Swiftplay</h3>
+                        <p>Swiftplay is a best-of-nine spike (Plant/Defuse) mode. It has most of the same gameplay rules
+                            as Unrated but with the following changes to adjust for its shorter duration: <br>
+                            All player start each half with two points for their ultimate. <br>
+                            No credit bonuses for loss streaks. <br>
+                            Credits earned based on round outcome have adjusted values and are the same for both teams,
+                            with the exception of round 2</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi bg-danger" width="1em" height="1em">
+                            <image
+                                href="https://static.wikia.nocookie.net/valorant/images/f/f1/Spike_Rush.png/revision/latest?cb=20200607210504"
+                                width="1em" height="1em"></image>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Spike Rush</h3>
+                        <p>Spike Rush is a faster-paced game mode. Pre-round time is reduced to 20 seconds (usually 30)
+                            and game time is reduced to 80 seconds (usually 100). While the attackers have less time to
+                            plant, they also have the advantage of each player having a spike. The game ends when one
+                            team reaches 4 round wins, teams switch sides after 3 rounds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="3">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Map Rotation</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/6/61/Loading_Screen_Abyss.png/revision/latest?cb=20240730145619'); background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Abyss</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/e/e7/Loading_Screen_Ascent.png/revision/latest/scale-to-width-down/1000?cb=20200607180020');  background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ascent</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/2/23/Loading_Screen_Bind.png/revision/latest/scale-to-width-down/1000?cb=20200620202316'); background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bind</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/7/70/Loading_Screen_Haven.png/revision/latest/scale-to-width-down/1000?cb=20200620202335'); background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Haven</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/1/13/Loading_Screen_Icebox.png/revision/latest/scale-to-width-down/1000?cb=20201015084446'); background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Icebox</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('https://static.wikia.nocookie.net/valorant/images/d/d0/Loading_Screen_Lotus.png/revision/latest/scale-to-width-down/1000?cb=20230106163526'); background-size: 410px 224px;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Lotus</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="4" class="bg-danger">
+        <div class="container px-4 py-5">
+            <dl>
+                <dt>
+                    <h3 class="mx-auto">Weapons</h3>
+                </dt>
+                <dd>
+                    <h4 class="mx-auto">Sidearms</h4>
+                    <table
+                        class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+                        <tbody class="d-flex flex-column justify-content-center">
+                            <tr>
+                                <td class="d-flex flex-column px-5" colspan="2"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png/revision/latest/scale-to-width-down/130?cb=20230711205256"
+                                        alt="Classic">Classic</td>
+                            </tr>
+                            <tr class="d-flex flex-row">
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/170?cb=20230711205257"
+                                        alt="Ghost">Ghost</td>
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/7/77/Shorty.png/revision/latest/scale-to-width-down/170?cb=20230711205304"
+                                        alt="Shorty">Shorty</td>
+                            </tr>
+                            <tr class="d-flex flex-row justify-content-between">
+                                <td class="d-flex flex-column px-auto"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/f/f1/Frenzy.png/revision/latest/scale-to-width-down/130?cb=20230711205257"
+                                        alt="frenzy">Frenzy</td>
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest/scale-to-width-down/170?cb=20230711205303"
+                                        alt="Sheriff">Sheriff</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </dd>
+                <dd>
+                    <h4 class="mx-auto">SMGs</h4>
+                    <table
+                        class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+                        <tbody class="d-flex flex-column justify-content-center">
+                            <tr class="d-flex flex-row">
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/b/b6/Stinger.png/revision/latest/scale-to-width-down/200?cb=20230711205306"
+                                        alt="Stinger">Stinger</td>
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/9/90/Spectre.png/revision/latest/scale-to-width-down/200?cb=20230711205305"
+                                        alt="Spectre">Spectre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd>
+                    <h4 class="mx-auto">Shotguns</h4>
+                    <table
+                        class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+                        <tbody class="d-flex flex-column justify-content-center">
+                            <tr class="d-flex flex-row">
+                                <td class="d-flex flex-column justify-content-end"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/e/eb/Bucky.png/revision/latest/scale-to-width-down/200?cb=20230711205254"
+                                        alt="Bucky">Bucky</td>
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/8/8a/Judge.png/revision/latest/scale-to-width-down/200?cb=20230711205259"
+                                        alt="Judge">Judge</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd>
+                    <h4 class="mx-auto">Rifles</h4>
+                    <table
+                        class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+                        <tbody class="d-flex flex-column justify-content-center">
+                            <tr class="d-flex flex-row">
+                                <td class="d-flex flex-column"><img
+                                        src="https://static.wikia.nocookie.net/valorant/images/0/07/Bulldog.png/revision/latest/scale-to-width-down/200?cb=20230711205255"
+                                        alt="Buldog">
+        </div>Buldog</td>
+        <td class="d-flex flex-column justify-content-end"><img
+                src="https://static.wikia.nocookie.net/valorant/images/f/fd/Guardian.png/revision/latest/scale-to-width-down/200?cb=20230711205258"
+                alt="Guardian">Guardian</td>
+        </tr>
+        <tr class="d-flex flex-row">
+            <td class="d-flex flex-column justify-content-end"><img
+                    src="https://static.wikia.nocookie.net/valorant/images/e/ec/Phantom.png/revision/latest/scale-to-width-down/200?cb=20230711205302"
+                    alt="Phantom">Phantom</td>
+            <td class="d-flex flex-column"><img
+                    src="https://static.wikia.nocookie.net/valorant/images/5/56/Vandal.png/revision/latest/scale-to-width-down/200?cb=20230711205307"
+                    alt="Vandal">Vandal</td>
+        </tr>
+        </tbody>
+        </table>
+        </dd>
+        <dd>
+            <h4 class="mx-auto">Sniper Rifles</h4>
+            <table class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+                <tbody class="d-flex flex-column justify-content-center">
+                    <tr>
+                        <td class="d-flex flex-column px-5" colspan="2"><img
+                                src="https://static.wikia.nocookie.net/valorant/images/b/b9/Marshal.png/revision/latest/scale-to-width-down/200?cb=20230711205300"
+                                alt="Marshal">Marshal</td>
+                    </tr>
+                    <tr class="d-flex flex-row">
+                        <td class="d-flex flex-column"><img
+                                src="https://static.wikia.nocookie.net/valorant/images/f/f0/Outlaw.png/revision/latest/scale-to-width-down/200?cb=20240109154332"
+                                alt="Outlaw">Outlaw</td>
+                        <td class="d-flex flex-column"><img
+                                src="https://static.wikia.nocookie.net/valorant/images/1/17/Operator.png/revision/latest/scale-to-width-down/200?cb=20230711205302"
+                                alt="Operator">Operator</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </dd>
+        <dd></dd>
+        <h4 class="mx-auto">Machine Guns</h4>
+        <table class="d-flex flex-row justify-content-start w-100 text-align-center table-bordered border-dark">
+            <tbody class="d-flex flex-column justify-content-center">
+                <tr class="d-flex flex-row">
+                    <td class="d-flex flex-column justify-content-end"><img
+                            src="https://static.wikia.nocookie.net/valorant/images/0/05/Ares.png/revision/latest/scale-to-width-down/200?cb=20230711205253"
+                            alt="Ares"></div>Ares</td>
+                    <td class="d-flex flex-column"><img
+                            src="https://static.wikia.nocookie.net/valorant/images/5/58/Odin.png/revision/latest/scale-to-width-down/200?cb=20230711205301"
+                            alt="Odin">Odin</td>
+                </tr>
+            </tbody>
+        </table>
+        </dd>
+        </dl>
+        </div>
+
+    </section>
+    <section id="footer" class="bg-danger">
+        <div class="container">
+            <footer class="py-3">
+                <p class="text-center text-body-secondary">© 2024 Berdiyar</p>
+            </footer>
+        </div>
+    </section>
 </body>
+
 </html>
