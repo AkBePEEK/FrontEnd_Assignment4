@@ -76,3 +76,47 @@ td {
 .button:hover {
   background-color: blanchedalmond;
 }
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:hover {
+  background-color: #eee;
+}
+input{
+  border: none;
+  border-bottom: 2px solid black;
+}
+input[type=text]{
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+  background-position: 10px 10px; 
+}
+input[type=text]:focus{
+  width: 500px;
+}
