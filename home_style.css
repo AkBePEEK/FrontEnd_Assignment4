@@ -120,3 +120,19 @@ input[type=text]{
 input[type=text]:focus{
   width: 500px;
 }
+.number_sort{
+  background-image: url(https://images.crazygames.com/sort-it-uei/20221121124430/sort-it-uei-cover?auto=format,compress&q=75&cs=strip);
+}
+.calculator{
+  background-image: url(https://i.ytimg.com/vi/j59qQ7YWLxw/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tax_calculator{
+  background-image: url(https://assets-us-01.kc-usercontent.com/fa776f1a-4d27-4a6b-ae1c-2ce928f9647d/d20525ef-e383-4846-9d41-517361b47cf6/woman%20tax%20audit%20employment_cropped.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.to-do_list{
+  background-image: url(https://cdn.vertex42.com/ExcelTemplates/Images/todolists/printable-to-do-list-3-columns.png);
+}

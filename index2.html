@@ -27,7 +27,7 @@
         </div>
     </section>
     <section id="to-do_list">
-        <div class="px-4 py-5 my-5 central-column">
+        <div class="px-4 py-5 my-5 central-column to-do_list">
             <h1 class="display-5 my-5 fw-bold text-body-emphasis text-center">2. Interactive To-Do List</h1>
             <ul id="list_group"></ul>
 
@@ -39,37 +39,37 @@
         </div>
     </section>
     <section id="number_sort">
-        <div class="px-4 py-5 my-5 central-column">
-            <h1 class="display-5 my-5 fw-bold text-body-emphasis text-center">3. Number sorting tool</h1>
+        <div class="px-4 py-5 my-5 central-column number_sort">
+            <h1 class="text-danger display-5 my-5 fw-bold text-center">3. Number sorting tool</h1>
             <div class="text-center">
                 <input type="text" id="list_num" placeholder="Enter the numbers"><br><br>
                 <input type="text" id="order" placeholder="Order"><br><br>
-                <button type="button" class="btn btn-outline-dark" onclick="Sort()">Insert
+                <button type="button" class="btn btn-outline-warning" onclick="Sort()">Insert
                 </button>
-                <p>Answer:</p>
-                <p id="sorted_arr"></p>
+                <p class="text-white">Answer:</p>
+                <p id="sorted_arr" class="text-white"></p>
             </div>
         </div>
     </section>
     <section id="simple_calculator">
-        <div class="px-4 py-5 my-5 central-column">
+        <div class="px-4 py-5 my-5 central-column calculator">
             <h1 class="display-5 my-5 fw-bold text-body-emphasis text-center">4. Simple calculator</h1>
             <div class="text-center">
                 <input type="text" id="firstnum" value="" placeholder="Number 1"><br><br>
                 <input type="text" id="secondnum" value="" placeholder="Number 2"><br><br>
-                <button type="button" class="btn btn-outline-dark" onclick="Multiply()">n*m</button>
-                <button type="button" class="btn btn-outline-dark" onclick="Divide()">n/m</button>
-                <button type="button" class="btn btn-outline-dark" onclick="Substract()">n-m</button>
-                <button type="button" class="btn btn-outline-dark" onclick="Summation()">n+m</button>
-                <button type="button" class="btn btn-outline-dark" onclick="Power()">n^m</button>
-                <button type="button" class="btn btn-outline-dark" onclick="Logarithm()">logn(m)</button>
-                <p>Answer:</p>
-                <p id="result"></p>
+                <button type="button" class="btn btn-outline-light" onclick="Multiply()">n*m</button>
+                <button type="button" class="btn btn-outline-light" onclick="Divide()">n/m</button>
+                <button type="button" class="btn btn-outline-light" onclick="Substract()">n-m</button>
+                <button type="button" class="btn btn-outline-light" onclick="Summation()">n+m</button>
+                <button type="button" class="btn btn-outline-light" onclick="Power()">n^m</button>
+                <button type="button" class="btn btn-outline-light" onclick="Logarithm()">logn(m)</button>
+                <p class="text-white">Answer:</p>
+                <p id="result" class="text-white"></p>
             </div>
         </div>
     </section>
-    <section id="tax_calculator">
-        <div class="px-4 py-5 my-5 central-column">
+    <section class="tax_calculator">
+        <div class="px-4 py-5 my-5 central-column tax_calculator">
             <h1 class="display-5 my-5 fw-bold text-body-emphasis text-center">5. Tax calculator</h1>
             <div class="text-center">
                 <input type="text" id="purchase" placeholder="Enter your purchase"><br><br>
